@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Greenshift Consultants</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script defer src="js/contact-validation.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="banner">
+            <h1>Greenshift Consultants</h1>
+            <p>Guiding you toward a sustainable future</p>
+        </section>
+        <nav class="nav-container">
+            <button class="nav-toggler" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="main-navigation" class="nav-menu" aria-label="Main navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro contact-intro">
+            <h2>Get In Touch</h2>
+            <p>Ready to start your sustainability journey? Contact us today to discuss how we can help your organization achieve its environmental goals.</p>
+        </section>
+
+        <section class="contact-wrapper">
+
+            <!-- LEFT SIDE: CONTACT INFO CARD -->
+            <aside class="contact-info">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> 123 Green Avenue, Eco City</p>
+                <p><strong>Email:</strong> <a href="mailto:info@greenshift.com">info@greenshift.com</a></p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p>
+                    <a href="#" aria-label="Website"><i class="fas fa-globe"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </p>
+
+
+            </aside>
+
+            <!-- RIGHT SIDE: FORM -->
+            <section class="contact-form-section">
+                <h3>Send us a Message</h3>
+                <form id="contactForm" novalidate>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send</button>
+                    <p id="formFeedback" role="alert"></p>
+                </form>
+            </section>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Greenshift Consultants. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
